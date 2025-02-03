@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== NAVIGATION BAR STYLES ========== */
+
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a{
+    text-decoration: none; 
+    color:azure;
+    padding: 15px 20px;
+    margin: 0 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: orange;
+    
+}
+
+.navbar li{
+    display: block;
+}
+
