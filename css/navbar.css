@@ -9,11 +9,13 @@
 .navbar ul{
     list-style-type: none;
     background-color: black;
-    text-align: right;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    text-align: center;
+    height: 77px;
+   
 }
 
 .navbar a{
@@ -26,11 +28,23 @@
 }
 
 .navbar a:hover{
-    background-color: orange;
-    
+    background-color: rgb(230, 185, 104);
+    border-radius: 25px;
 }
 
 .navbar li{
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 100%;;
 }
 
+
+/* ========== LOGO IMAGE STYLE ========== */
+
+.logo img{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 15px;
+}
