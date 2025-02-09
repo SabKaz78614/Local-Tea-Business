@@ -2,20 +2,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* ========== NAVIGATION BAR STYLES ========== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: black;
+    padding: 10px 20px;
+    height: 77px;
+}
 
 .navbar ul{
     list-style-type: none;
-    background-color: black;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    text-align: center;
-    height: 77px;
-   
+    text-align: center; 
 }
 
 .navbar a{
@@ -38,13 +46,39 @@
     height: 100%;;
 }
 
+.nav-items{
+    font-size: 15px;
+}
 
-/* ========== LOGO IMAGE STYLE ========== */
+
+/* ========== LOGO STYLE ========== */
+.logo{
+    display: flex;
+    align-items: center; 
+}
 
 .logo img{
-    position: fixed;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin: 15px;
 }
+
+.logo-name{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ========== CART STYLE ========== */
+.cart-icon {
+    font-size: 15px; 
+    color: white;
+    position: relative; 
+}
+
+.cart-icon:hover {
+    background-color: rgb(230, 185, 104); 
+}
+
+
