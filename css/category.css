@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== CARD STYLES ========== */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    justify-content: space-evenly; 
+    gap: 60px; 
+    margin-top: 120px;
+    
+}
+
+/* Card styles */
+.card {
+    width: 450px;
+    height: 360px;
+    padding: 32px 16px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+/* Image inside the card */
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark overlay effect */
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* On hover, show overlay */
+.card:hover:before {
+    opacity: 1;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-20px);
+}
+
+/* ========== CARD INFO STYLES ========== */
+.card .info {
+    position: relative;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Show text when hovering */
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Styling the heading inside info */
+.card .info h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Styling paragraph inside info */
+.card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+/* ========== CARD BUTTON STYLES ========== */
+.card .info .btn {
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 35%
+}
+
+/* Button hover effect */
+.card .info .btn:hover {
+    background-color: hsl(240, 100%, 90%);
+    color: hsl(241, 41%, 54%);
+}
