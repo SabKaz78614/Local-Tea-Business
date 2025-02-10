@@ -38,7 +38,7 @@
 /* ========== H1 AND BUTTON STYLES ========== */
 .slide h1 {
     font-size: 64px; 
-    color: rgb(230, 185, 104); 
+    color: hsl(240, 100%, 83%); 
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
     position: absolute;
     top: 40%; 
@@ -53,7 +53,7 @@
     display: inline-block;
     padding: 12px 24px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid hsl(30, 100%, 40%);
+    border: 2px solid hsl(241, 41%, 54%);
     color: white;
     font-size: 1rem;
     text-decoration: none;
@@ -66,7 +66,7 @@
 }
 
 .slide a.btn:hover {
-    background-color: rgb(230, 185, 104);
+    background-color: hsl(240, 100%, 90%);
     color: black; 
 }
 
@@ -95,13 +95,13 @@
 /* Hover Effect */
 .carousel-button:hover,
 .carousel-button:focus {
-    color: hsl(30, 100%, 50%);
+    color: hsl(241, 41%, 54%);
     background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Focus Effect */
 .carousel-button:focus {
-    outline: 1px solid hsl(30, 100%, 50%);
+    outline: 1px solid hsl(241, 41%, 54%);
 }
 
 /* Position of the Previous and Next buttons */

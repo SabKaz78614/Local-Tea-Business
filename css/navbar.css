@@ -22,7 +22,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    background-color: black;
+    background-color: whitesmoke;
     padding: 10px 20px;
     height: 77px;
     width: 100%;
@@ -44,7 +44,7 @@ body {
 }
 
 .logo-name {
-    color: white;
+    color: hsl(241, 41%, 54%);
     font-weight: bold;
     font-size: 22px;
     margin-left: 10px; 
@@ -69,7 +69,7 @@ body {
 
 .navbar a {
     text-decoration: none; 
-    color: azure;
+    color: black;
     padding: 15px 20px;
     margin: 0 15px;
     display: block;
@@ -77,8 +77,9 @@ body {
 }
 
 .navbar a:hover {
-    background-color: rgb(230, 185, 104);
+    background-color: hsl(240, 100%, 90%);
     border-radius: 25px;
+    color: hsl(241, 41%, 54%);
 }
 
 /* NAV ITEMS FONT SIZE */
@@ -89,13 +90,12 @@ body {
 /* CART ICON STYLE */
 .cart-icon {
     font-size: 18px;
-    color: white;
     position: relative;
     padding: 10px;
     cursor: pointer; 
 }
 
 .cart-icon:hover {
-    background-color: rgb(230, 185, 104);
+    background-color:hsl(240, 100%, 90%);
     border-radius: 25px;
 }
