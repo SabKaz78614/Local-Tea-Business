@@ -4,18 +4,20 @@ h1{
 }
 
 .btn {
-    display: block;
-    text-decoration: none;
-    padding: 8px 16px;
-    background: white;
+    padding: 12px 24px;
+    background-color: white;
+    border: 2px solid hsl(241, 41%, 54%);
     color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
-    border-radius: 25px;
-    text-align: center;
-
+    font-size: 1rem;
+    text-decoration: none; /* For <a> tags, but not necessary for <button> */
+    border-radius: 30px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 /* Button hover effect */
 .btn:hover {
