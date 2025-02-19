@@ -1,0 +1,149 @@
+/* ================= GENERAL STYLES ================= */
+* {
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= HEADING & PARAGRAPH STYLES ================= */
+
+.products {
+    text-align: center;
+    padding: 60px 5%;
+    background: #f9f7fc; 
+}
+
+/* =================== HEADING AND PARAGRAPH STYLING =================== */
+.products .heading {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.products .heading h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #5d3a9b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.products .heading h1::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #5d3a9b;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.products .heading p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.8;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+
+/* ================= SECTION HEADING STYLES ================= */
+.fruit-tea-heading h2, 
+.bubble-tea-heading h2,
+.pastries-heading h2,
+.coffee-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #5d3a9b;
+    margin-top: 30px;
+}
+
+.fruit-tea-heading p,
+.bubble-tea-heading p,
+.pastries-heading p,
+.coffee-heading p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 70%;
+    margin: 15px auto;
+    color: black;
+}
+
+/* ================= PRODUCTS CONTAINER STYLEING================= */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-container .box {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.products-container .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= PRODUCT IMAGE ================= */
+.products-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* ================= PRODUCT TITLE ================= */
+.products-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* ================= PRODUCT CONTENT ================= */
+.products-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.products-container .content span {
+    background: #5d3a9b;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.products-container .content a {
+    padding: 6px 14px;
+    color: #5d3a9b;
+    border: 2px solid #5d3a9b;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.products-container .content a:hover {
+    background:  hsl(240, 100%, 90%);
+    color: white;
+}

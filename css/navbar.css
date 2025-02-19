@@ -78,7 +78,7 @@ body {
 
 .navbar a:hover {
     background-color: hsl(240, 100%, 90%);
-    border-radius: 25px;
+    border-radius: 10px;
     color: hsl(241, 41%, 54%);
 }
 
