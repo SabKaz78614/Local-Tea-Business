@@ -18,8 +18,6 @@ h1{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
-/* Button hover effect */
 .btn:hover {
     background-color: hsl(240, 100%, 90%);
     color: hsl(241, 41%, 54%);
