@@ -1,3 +1,5 @@
+/* ================= SLIDER EFFECT================= */
+
 const buttons = document.querySelectorAll("[data-carousel-button]");
 const slidesContainer = document.querySelector("[data-slides]");
 let intervalId; // Stores the interval ID
@@ -44,3 +46,6 @@ function resetAutoSlide() {
 
 // Start automatic sliding
 startAutoSlide();
+
+
+

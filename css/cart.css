@@ -1,24 +1,115 @@
-h1{
-    margin-top: 120px;
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Cart Section */
+.cart-section {
+    max-width: 800px;
+    margin: 120px auto 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/* Cart Title */
+.cart-section h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Cart Items */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Item Image */
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Item Details */
+.cart-item .item-details {
+    flex: 1;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.cart-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.cart-item span {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Remove Button */
+.remove-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+    background: #cc0000;
+}
+
+/* Cart Total */
+.cart-total {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Order Now Button */
 .btn {
     padding: 12px 24px;
-    background-color: white;
-    border: 2px solid hsl(241, 41%, 54%);
-    color: black;
+    background-color: hsl(241, 41%, 54%);
+    color: white;
     font-size: 1rem;
-    text-decoration: none; /* For <a> tags, but not necessary for <button> */
+    border: none;
     border-radius: 30px;
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .btn:hover {
-    background-color: hsl(240, 100%, 90%);
-    color: hsl(241, 41%, 54%);
+    background-color: hsl(241, 41%, 64%);
+    transform: scale(1.05);
 }
+
+

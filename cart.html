@@ -46,6 +46,7 @@
 
             <li><a href="./cart.html" class="cart-icon">
                 <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count" id="cart-item-count">0</span> 
             </a></li>
 
         </ul>
@@ -57,13 +58,12 @@
             <!-- Cart items will be displayed here -->
         </div>
         <div class="cart-total">
-            <!-- Cart total will be displayed here -->
+            <h2>Total: <span id="cart-total-price">£0</span></h2>
         </div>
-        <button class="btn">Order Now</button>
+        <button class="btn" id="order-now">Order Now</button>
     </div>
 
-
-
+    <script src="./js/cart.js"></script>
 
 
 </body>

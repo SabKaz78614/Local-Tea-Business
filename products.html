@@ -12,6 +12,12 @@
 
 <body>
 
+    <!-- Mobile Menu Toggle
+     <input type="checkbox" id="menu-toggle" style="display: none;">
+     <label for="menu-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+     </label> -->
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">
@@ -19,12 +25,31 @@
             <span class="logo-name">Tealite</span>
         </div>
         <ul>
-            <li><a href="./index.html"><span class="nav-items">Home</span></a></li>
-            <li><a href="./about.html"><span class="nav-items">About</span></a></li>
-            <li><a href="./category.html"><span class="nav-items">Category</span></a></li>
-            <li><a href="./products.html"><span class="nav-items">Products</span></a></li>
-            <li><a href="./contact.html"><span class="nav-items">Contact</span></a></li>
-            <li><a href="./cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="./index.html">
+                <span class="nav-items">Home</span>
+            </a></li>
+
+            <li><a href="./about.html">
+                <span class="nav-items">About</span>
+            </a></li>
+
+            <li><a href="./category.html">
+                <span class="nav-items">Category</span>
+            </a></li>
+
+            <li><a href="./products.html">
+                <span class="nav-items">Products</span>
+            </a></li>
+
+            <li><a href="./contact.html">
+                <span class="nav-items">Contact</span>
+            </a></li>
+
+            <li><a href="./cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count" id="cart-item-count">0</span> 
+            </a></li>
+
         </ul>
     </nav>
 
@@ -53,7 +78,7 @@
                 <img src="./resources/Products/fruit-teas/blood-orange.jpg" alt="Blood-Orange Fruit Tea">
                 <h3>Blood-Orange Fruit Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£6.49</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -62,7 +87,7 @@
                 <img src="./resources/Products/fruit-teas/Chamomile_and_Passionfruit.webp" alt="Chamomile & Passionfruit Fruit Tea">
                 <h3>Chamomile & Passionfruit Fruit Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£6.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -71,7 +96,7 @@
                 <img src="./resources/Products/fruit-teas/peach.jpg" alt="Peach & Vanilla Fruit Tea">
                 <h3>Peach & Vanilla Fruit Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£6.49</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -80,7 +105,7 @@
                 <img src="./resources/Products/fruit-teas/strawberry-kiwi.webp" alt="Strawberry-Kiwi Fruit Tea">
                 <h3>Strawberry-Kiwi Fruit Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£6.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -101,7 +126,7 @@
                 <img src="./resources/Products/bubble-teas/mango.jpg" alt="Mango and Passionfruit Bubble Tea">
                 <h3>Mango and Passionfruit Bubble Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£8.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -110,7 +135,7 @@
                 <img src="./resources/Products/bubble-teas/lychee.webp" alt="Lychee Bubble Tea">
                 <h3>Lychee Bubble Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£8.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -119,7 +144,7 @@
                 <img src="./resources/Products/bubble-teas/matcha.jpg" alt="Matcha Bubble Tea">
                 <h3>Matcha Bubble Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£7.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -128,7 +153,7 @@
                 <img src="./resources/Products/bubble-teas/Taro.jpeg" alt="Taro Bubble Tea">
                 <h3>Taro Bubble Tea</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£7.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -152,7 +177,7 @@
                 <img src="./resources/Products/pastries/churros.jpg" alt="Churros">
                 <h3>Churros</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£2.29</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -161,7 +186,7 @@
                 <img src="./resources/Products/pastries/Cinnamon-Rolls.jpg" alt="Cinnamon Rolls">
                 <h3>Cinnamon Rolls</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£3.49</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -170,7 +195,7 @@
                 <img src="./resources/Products/pastries/croissants.jpg" alt="Croissants">
                 <h3>Croissants</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£3.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -179,7 +204,7 @@
                 <img src="./resources/Products/pastries/donuts.jpg" alt="Donuts">
                 <h3>Donuts</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£4.99</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -202,7 +227,7 @@
                 <img src="./resources/Products/coffee/coffee.webp" alt="Coffee">
                 <h3>Coffee</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£7.49</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -211,7 +236,7 @@
                 <img src="./resources/Products/coffee/frappe.jpg" alt="Frappe">
                 <h3>Caramel Frappe</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£7.49</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -220,7 +245,7 @@
                 <img src="./resources/Products/coffee/iced.webp" alt="Iced Coffee">
                 <h3>Iced Coffee</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£7.49</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
@@ -229,12 +254,15 @@
                 <img src="./resources/Products/coffee/mocha.jpg" alt="Mocha">
                 <h3>Mocha</h3>
                 <div class="content">
-                    <span>£££</span>
+                    <span>£7.49</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./js/cart.js"></script>
+    
 
 </body>
 </html>
