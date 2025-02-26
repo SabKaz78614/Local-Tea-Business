@@ -108,3 +108,14 @@ body {
     background-color: hsl(240, 100%, 90%);
     border-radius: 25px;
 }
+
+@media (max-width: 1024px){
+    .navbar a{
+        padding: 10px;
+    }
+
+    .nav-items, .cart-icon{
+        font-size: 14px;
+    }
+
+}
