@@ -5,31 +5,42 @@ body {
     padding: 0;
 }
 
+/* Ensure the image covers the full height of its container */
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* The about section should have a fixed or dynamic height */
 .about {
     width: 100%;
-    height: 700px;
+    height: 100vh;  /* Makes the container fill the entire viewport */
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Ensures content that overflows is hidden */
     margin-top: 50px; 
 }
 
+/* Make the image fill the entire container */
 .about img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures the image covers the container area */
     filter: blur(3px);
-    position: absolute;
-    z-index: -1;
+    position: absolute; /* Positioned absolutely to cover the entire container */
+    z-index: -1; /* Keep the image behind the content */
 }
 
+/* Overlay to darken the image */
 .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2); 
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensures overlay is above the image but below the content */
 }
 
+/* Content styling */
 .content {
     position: absolute;
     top: 50%;
@@ -41,6 +52,7 @@ body {
     border-radius: 8px;
     max-width: 80%;
     color: #fff;
+    z-index: 2; /* Ensure content stays on top */
 }
 
 .content h1 {

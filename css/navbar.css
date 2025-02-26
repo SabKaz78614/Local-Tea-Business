@@ -8,11 +8,19 @@
     font-style: normal;
 }
 
+/* Remove default margin and padding from body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Body: Flex layout to stack navbar and content */
 body {
     display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
 }
@@ -21,14 +29,15 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     background-color: whitesmoke;
     padding: 10px 20px;
     height: 77px;
-    width: 100%;
-    position: fixed; 
+    width: 100%; /* Ensure it takes up 100% width */
+    position: fixed;
     top: 0;
-    z-index: 100; 
+    left: 0; /* Ensure the navbar starts at the left edge */
+    z-index: 100;
 }
 
 /* LOGO SECTION */
@@ -47,7 +56,7 @@ body {
     color: hsl(241, 41%, 54%);
     font-weight: bold;
     font-size: 22px;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 /* NAVIGATION MENU */
@@ -57,7 +66,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    align-items: center; 
+    align-items: center;
     flex-grow: 1;
 }
 
@@ -68,7 +77,7 @@ body {
 }
 
 .navbar a {
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
     padding: 15px 20px;
     margin: 0 15px;
@@ -92,10 +101,10 @@ body {
     font-size: 18px;
     position: relative;
     padding: 10px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .cart-icon:hover {
-    background-color:hsl(240, 100%, 90%);
+    background-color: hsl(240, 100%, 90%);
     border-radius: 25px;
 }

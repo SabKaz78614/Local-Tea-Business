@@ -1,8 +1,17 @@
+/* ================= GENERAL STYLES ================= */
 * {
     box-sizing: border-box;
     font-family: "Merriweather", serif;
     margin: 0;
     padding: 0;
+}
+
+/* ================= REMOVE MARGINS FROM HTML AND BODY ================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure body and html take full width */
+    height: 100%; /* Ensure body and html take full height */
 }
 
 /* =================== CATEGORY HEADING STYLING =================== */
@@ -12,9 +21,11 @@
     background: #f9f7fc; 
     margin-top: 50px;
     padding-bottom: 20px;
+    width: 100%; /* Make sure it spans the full width */
+    margin: 50px auto; /* Center the content */
 }
 
-
+/* Heading text styling */
 .heading h1 {
     font-size: 80px;
     font-weight: 800;
@@ -23,10 +34,10 @@
     letter-spacing: 2px;
     position: relative;
     display: inline-block;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-
+/* Heading underlining effect */
 .heading h1::after {
     content: "";
     display: block;
@@ -37,7 +48,7 @@
     border-radius: 2px;
 }
 
-/* =================== PARAGRAPH STYLING =================== */
+/* Paragraph styling */
 .heading p {
     font-size: 18px;
     color: black;
@@ -46,20 +57,21 @@
     padding: 0 15px;
 }
 
-
 /* ========== CARD STYLES ========== */
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 70%;
-    justify-content: space-evenly; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Make it responsive */
+    justify-content: space-evenly;
     gap: 60px; 
-    margin-top: 50px;   
+    margin-top: 50px;
+    width: 100%; /* Ensure wrapper takes the full width */
+    padding: 0 5%;
+    max-width: none; /* Remove any max-width constraint */
 }
 
 /* Card styles */
 .card {
-    width: 450px;
+    width: 100%; /* Ensure card takes full width of the wrapper */
     height: 360px;
     padding: 32px 16px;
     background: #fff;
@@ -80,7 +92,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 /* Dark overlay effect */
@@ -150,7 +162,7 @@
     transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
     border-radius: 25px;
     text-align: center;
-    margin: 0 35%
+    margin: 0 35%;
 }
 
 /* Button hover effect */

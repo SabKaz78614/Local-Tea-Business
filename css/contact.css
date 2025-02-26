@@ -57,3 +57,23 @@ form button {
 form button:hover {
     background-color: hsl(240, 100%, 90%);
 }
+
+@media (max-width: 1024px) {
+    .contact-container {
+        max-width: 90%; /* Increase container width */
+        padding: 15px; /* Reduce padding */
+    }
+
+    form input, form textarea {
+        padding: 8px; /* Reduce padding */
+    }
+
+    form textarea {
+        height: 120px; /* Reduce height of textarea */
+    }
+
+    form button {
+        width: 100%; /* Make button span full width */
+        padding: 12px 0; /* Adjust padding for button */
+    }
+}
