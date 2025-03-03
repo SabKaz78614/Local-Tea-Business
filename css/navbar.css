@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,10 +11,10 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    background-color: whitesmoke; /* Changed from black */
+    justify-content: space-between;
+    background-color: whitesmoke;
     padding: 10px 20px;
-    height: 77px; 
+    height: 77px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -28,12 +28,12 @@
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    text-align: center; 
+    text-align: center;
 }
 
 .navbar a {
-    text-decoration: none; 
-    color: black; /* Changed from azure */
+    text-decoration: none;
+    color: black;
     padding: 15px 20px;
     margin: 0 15px;
     display: block;
@@ -41,9 +41,9 @@
 }
 
 .navbar a:hover {
-    background-color: hsl(240, 100%, 90%); /* Changed hover color */
+    background-color: hsl(240, 100%, 90%);
     border-radius: 10px;
-    color: hsl(241, 41%, 54%); /* Changed text hover color */
+    color: hsl(241, 41%, 54%);
 }
 
 .navbar li {
@@ -53,13 +53,66 @@
 }
 
 .nav-items {
-    font-size: 18px; /* Slightly increased font size */
+    font-size: 18px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+/* Sidebar styles */
+ul.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: hwb(240 80% 0% / 0.747);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+/* Sidebar menu items */
+.sidebar li, .sidebar a {
+    width: 100%;
+}
+
+/* Close button (X) styles */
+.close-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.close-icon {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+/* Hamburger icon styles */
+label.hamburger {
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 30px;
+    color: black;
 }
 
 /* ========== LOGO STYLE ========== */
 .logo {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .logo img {
@@ -70,38 +123,91 @@
 }
 
 .logo-name {
-    color: hsl(241, 41%, 54%); /* Changed from white */
+    color: hsl(241, 41%, 54%);
     font-weight: bold;
     font-size: 22px;
 }
 
 /* ========== CART STYLE ========== */
 .cart-icon {
-    font-size: 18px; /* Increased font size */
-    color: black; /* Changed from white */
+    font-size: 18px;
+    color: black;
     position: relative;
     padding: 10px;
     cursor: pointer;
 }
 
 .cart-icon:hover {
-    background-color: hsl(240, 100%, 90%); /* Changed hover color */
+    background-color: hsl(240, 100%, 90%);
     border-radius: 25px;
 }
 
-@media (max-width: 1024px){
-    .navbar a{
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablet and smaller screen sizes */
+@media (max-width: 1024px) {
+    .navbar a {
         padding: 10px;
     }
 
-    .nav-items, .cart-icon{
+    .nav-items, .cart-icon {
         font-size: 14px;
     }
 
+    .logo-name {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
 }
 
-@media (max-width: 768px){
-    .navbar a{
+/* Smaller screens (Max-width 768px) */
+@media (max-width: 768px) {
+    .navbar a {
         padding: 0px;
+    }
+}
+
+/* Mobile screens (Max-width 660px) */
+@media (max-width: 660px) {
+    /* Make hamburger icon visible */
+    label.hamburger {
+        display: flex;
+    }
+
+    .hamburger i {
+        font-size: 20px;
+    }
+
+    /* Hide the default navbar items */
+    .navbar ul {
+        display: none;
+    }
+
+    /* Show sidebar when the menu toggle is checked */
+    #menu-toggle:checked ~ .sidebar {
+        display: flex;
+    }
+
+    /* Change styles for navbar items */
+    .navbar a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .nav-items, .cart-icon {
+        font-size: 14px;
+    }
+
+    .logo-name {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
     }
 }

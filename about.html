@@ -15,47 +15,52 @@
 </head>
 
 <body>
-    <!-- Mobile Menu Toggle
-     <input type="checkbox" id="menu-toggle" style="display: none;">
-     <label for="menu-toggle" class="hamburger">
-        <i class="fa-solid fa-bars"></i>
-     </label> -->
-
-    <!-- Navigation Bar -->
-     <nav class="navbar">
+    
+    <nav class="navbar">
         <div class="logo">
             <img src="../resources/Tea-logo.png">
             <span class="logo-name">Tealite</span>
         </div>
-        <ul>
-            <li><a href="index.html">
-                <span class="nav-items">Home</span>
-            </a></li>
-
-            <li><a href="about.html">
-                <span class="nav-items">About</span>
-            </a></li>
-
-            <li><a href="category.html">
-                <span class="nav-items">Category</span>
-            </a></li>
-
-            <li><a href="products.html">
-                <span class="nav-items">Products</span>
-            </a></li>
-
-            <li><a href="contact.html">
-                <span class="nav-items">Contact</span>
-            </a></li>
-
+    
+        <!-- Hidden checkbox for menu toggle -->
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+    
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    
+        <!-- Sidebar -->
+        <ul class="sidebar">
+            <!-- Close Button -->
+            <li class="close-btn">
+                <label for="menu-toggle" class="close-icon">&times;</label>
+            </li>
+            <li><a href="index.html"><span class="nav-items">Home</span></a></li>
+            <li><a href="about.html"><span class="nav-items">About</span></a></li>
+            <li><a href="category.html"><span class="nav-items">Category</span></a></li>
+            <li><a href="products.html"><span class="nav-items">Products</span></a></li>
+            <li><a href="contact.html"><span class="nav-items">Contact</span></a></li>
             <li><a href="./cart.html" class="cart-icon">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <span class="cart-count" id="cart-item-count">0</span> 
+                <span class="cart-count" id="cart-item-count">0</span>
             </a></li>
-
-
+        </ul>
+    
+        <!-- Main Menu (visible on larger screens) -->
+        <ul>
+            <li><a href="index.html"><span class="nav-items">Home</span></a></li>
+            <li><a href="about.html"><span class="nav-items">About</span></a></li>
+            <li><a href="category.html"><span class="nav-items">Category</span></a></li>
+            <li><a href="products.html"><span class="nav-items">Products</span></a></li>
+            <li><a href="contact.html"><span class="nav-items">Contact</span></a></li>
+            <li><a href="./cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count" id="cart-item-count">0</span>
+            </a></li>
         </ul>
     </nav>
+    
 
     <div class="about">
         <img src="./resources/about-background.jpg">
