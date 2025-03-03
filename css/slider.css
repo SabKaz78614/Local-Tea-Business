@@ -1,22 +1,40 @@
-/* ========== SLIDER ========== */
-.carousel {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    margin-top: calc(77px + 20px); 
+/* ========== RESET DEFAULT STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ========== BODY FIX ========== */
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* ========== FIX SLIDER POSITION ========== */
+.carousel {
+    width: 100%;
+    height: calc(100vh - 77px); /* Adjusted height to fit screen */
+    position: relative;
+    top: 77px; /* Pushes it below the fixed navbar */
+    overflow: hidden;
+}
+
+/* Prevents extra space issues */
 .carousel ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .slide {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0; 
-    transition: opacity 1s ease-in-out; 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,35 +45,34 @@
 .slide img {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 }
 
 .slide[data-active] {
-    opacity: 1; 
-    pointer-events: auto
+    opacity: 1;
+    pointer-events: auto;
 }
 
-/* ========== H1 AND BUTTON STYLES ========== */
+/* ========== TEXT & BUTTON STYLES ========== */
 .slide h1 {
-    font-size: 64px; 
-    color: hsl(240, 100%, 83%); 
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    font-size: 64px;
+    color: hsl(241, 41%, 54%); /* Purple matching navbar */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 40%; 
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     z-index: 2;
     font-weight: bold;
 }
 
-
 .slide a.btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid hsl(241, 41%, 54%);
-    color: white;
+    background-color: rgba(241, 41%, 54%, 0.3); /* Light purple background */
+    border: 2px solid hsl(241, 41%, 54%); /* Purple border */
+    color: hsl(241, 41%, 54%); /* Purple text */
     font-size: 1rem;
     text-decoration: none;
     border-radius: 30px;
@@ -67,14 +84,9 @@
 }
 
 .slide a.btn:hover {
-    background-color: hsl(240, 100%, 90%);
-    color: black; 
+    background-color: hsl(241, 41%, 54%); /* Purple background on hover */
+    color: white; /* White text on hover */
 }
-
-.slide a.btn:hover span {
-    color: black;
-}
-
 
 /* ========== BUTTON STYLES ========== */
 .carousel-button {
@@ -82,34 +94,27 @@
     z-index: 2;
     background: none;
     border: none;
-    font-size: 64px; 
+    font-size: 48px;
     top: 50%;
     transform: translateY(-50%);
-    color: black;
+    color: hsl(241, 41%, 54%); /* Purple color for button */
     cursor: pointer;
     border-radius: 4px;
-    padding: 0 8px; 
-    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: rgba(241, 41%, 54%, 0.1); /* Light purple background */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover Effect */
 .carousel-button:hover,
 .carousel-button:focus {
-    color: hsl(241, 41%, 54%);
-    background-color: rgba(0, 0, 0, 0.2);
+    color: white; /* White color on hover */
+    background-color: hsl(241, 41%, 54%); /* Darker purple on hover */
 }
 
-/* Focus Effect */
-.carousel-button:focus {
-    outline: 1px solid hsl(241, 41%, 54%);
-}
-
-/* Position of the Previous and Next buttons */
 .carousel-button.prev {
     left: 16px;
 }
 
 .carousel-button.next {
-    right: 16px; 
+    right: 16px;
 }
