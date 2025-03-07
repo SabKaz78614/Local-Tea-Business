@@ -13,16 +13,30 @@ html, body {
     padding: 0;
     width: 100%; /* Ensure body and html take full width */
     height: 100%; /* Ensure body and html take full height */
+    overflow-x: hidden;
 }
 
 /* ================= PRODUCTS SECTION STYLES ================= */
 .products {
     text-align: center;
     padding: 60px 5%;
-    background: #f9f7fc; 
-    width: 100%; /* Ensure the products section spans full width */
-    margin: 0 auto; /* Center the content */
+    background: #f9f7fc;
+    width: 100%; /* Ensure it spans full width */
+    max-width: 100vw; /* Prevents overflow */
+    margin: 0 auto;
 }
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
+    width: 100%;
+    max-width: 100vw; /* Ensure no extra space */
+    margin: 0 auto;
+}
+
+
 
 /* =================== HEADING AND PARAGRAPH STYLING =================== */
 .products .heading {
@@ -158,3 +172,191 @@ html, body {
     background: hsl(240, 100%, 90%);
     color: white;
 }
+
+
+/* ================= RESPONSIVENESS ================= */
+@media (max-width: 1024px){
+    .products .heading h1{
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 768px){
+    .products .heading h1{
+        font-size: 55px;
+    }
+
+    .products .heading p{
+        font-size: 16px;
+    }
+
+    .fruit-tea-heading p,
+    .bubble-tea-heading p,
+    .pastries-heading p,
+    .coffee-heading p {
+        font-size: 16px
+    }
+
+    .products-container h3 {
+        font-size: 16px;
+    }
+
+    .fruit-tea-heading h2, 
+    .bubble-tea-heading h2, 
+    .pastries-heading h2, 
+    .coffee-heading h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 588px){
+    .fruit-tea-heading h2, 
+    .bubble-tea-heading h2, 
+    .pastries-heading h2, 
+    .coffee-heading h2 {
+        font-size: 40px;
+    }
+
+    .fruit-tea-heading p,
+    .bubble-tea-heading p,
+    .pastries-heading p,
+    .coffee-heading p {
+        font-size: 14px
+    }
+
+    .products-container .box .content span,
+    .products-container .box .content a {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 425px){
+    .products .heading h1{
+        font-size: 45px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .products .heading p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px){
+    .products .heading h1 {
+        font-size: 30px;
+        
+    }
+
+    .products .heading p{
+        font-size: 12px;
+    }
+
+    .fruit-tea-heading h2, 
+    .bubble-tea-heading h2, 
+    .pastries-heading h2, 
+    .coffee-heading h2 {
+        font-size: 30px;
+    }
+
+    .fruit-tea-heading p, 
+    .bubble-tea-heading p, 
+    .pastries-heading p, 
+    .coffee-heading p {
+        font-size: 12px;
+    }
+
+    .products-container img {
+        height: 170px;
+    }
+
+    .products-container h3 {
+        font-size: 14px;
+    }
+
+    .products-container .box .content span, 
+    .products-container .box .content a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 276px) {
+    .products-container {
+        grid-template-columns: 1fr; /* Ensure a single column layout */
+        gap: 15px; /* Reduce the gap between boxes */
+        padding: 20px 3%;
+    }
+
+    .products-container .box {
+        padding: 15px; /* Reduce padding */
+        border-radius: 8px; /* Slightly smaller border radius */
+    }
+
+    .products-container img {
+        height: 150px; /* Reduce image height */
+    }
+
+    .products-container h3 {
+        font-size: 14px; /* Decrease title size */
+    }
+
+    .products-container .content span,
+    .products-container .content a {
+        font-size: 12px; /* Reduce button text size */
+        padding: 4px 10px; /* Adjust button padding */
+    }
+}
+
+
+@media (max-width: 262px) {
+    .products {
+        padding: 40px 3%;
+    }
+
+    .products-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 3%;
+        gap: 10px;
+    }
+
+    .products-container .box {
+        width: 90%; /* Ensure it doesn't overflow */
+        max-width: 230px; /* Prevents stretching */
+        padding: 10px;
+    }
+
+    .products-container img {
+        height: 140px; /* Reduce image height */
+    }
+
+    .products-container h3 {
+        font-size: 12px;
+    }
+
+    .products-container .content span,
+    .products-container .content a {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}
+
+@media (max-width: 200px){
+
+    .products .heading h1 {
+        font-size: 25px;
+     }
+
+     .fruit-tea-heading h2, 
+     .bubble-tea-heading h2, 
+     .pastries-heading h2, 
+     .coffee-heading h2 {
+        font-size: 25px;
+    }
+    
+    .products-container .box .content span, 
+    .products-container .box .content a {
+        font-size: 8px;
+    }
+}
+
