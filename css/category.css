@@ -11,8 +11,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%; /* Ensure body and html take full width */
-    height: 100%; /* Ensure body and html take full height */
+    width: 100%; 
+    height: 100%; 
+    overflow-x: hidden;
 }
 
 /* =================== CATEGORY HEADING STYLING =================== */
@@ -22,8 +23,8 @@ html, body {
     background: #f9f7fc; 
     margin-top: 50px;
     padding-bottom: 20px;
-    width: 100%; /* Make sure it spans the full width */
-    margin: 50px auto; /* Center the content */
+    width: 100%; 
+    margin: 50px auto; 
 }
 
 /* Heading text styling */
@@ -61,18 +62,18 @@ html, body {
 /* ========== CARD STYLES ========== */
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Make it responsive */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     justify-content: space-evenly;
     gap: 60px; 
     margin-top: 50px;
-    width: 100%; /* Ensure wrapper takes the full width */
+    width: 100%; 
     padding: 0 5%;
     max-width: none; /* Remove any max-width constraint */
 }
 
 /* Card styles */
 .card {
-    width: 100%; /* Ensure card takes full width of the wrapper */
+    width: 100%; 
     height: 360px;
     padding: 32px 16px;
     background: #fff;
@@ -170,4 +171,151 @@ html, body {
 .card .info .btn:hover {
     background-color: hsl(240, 100%, 90%);
     color: hsl(241, 41%, 54%);
+}
+
+/* ================= RESPONSIVENESS ================= */
+@media (max-width: 1024px){
+    .heading h1{
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 768px){
+    .heading h1{
+        font-size: 55px;
+    }
+
+    .heading p{
+        font-size: 16px;
+    }
+
+    
+}
+
+@media (max-width: 425px){
+    .heading h1{
+        font-size: 45px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .heading p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 372px) {
+    .card .info .btn {
+        padding: 6px 12px;  
+        font-size: 12px;    
+        margin: 0 30%;     
+    }
+}
+
+@media (max-width: 336px) {
+    .card {
+        height: 300px; 
+        padding: 24px 12px;
+    }
+
+    .card .info h2 {
+        font-size: 20px; 
+    }
+
+    .card .info p {
+        font-size: 13px;
+    }
+
+    .card .info .btn {
+        padding: 5px 10px; 
+        font-size: 10px;
+        margin: 0 25%; 
+    }
+}
+
+
+@media (max-width: 320px) {
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .heading p {
+        font-size: 12px;
+    }
+
+    .wrapper .card {
+        width: 80%;
+        margin-left: 2%;
+    }
+
+    .wrapper .card .info h2 {
+        font-size: 15px;
+    }
+
+    .wrapper .card .info p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 315px) {
+    .heading {
+        padding: 115px 5%; 
+        margin-top: 30px; 
+        width: 100%;
+        margin: 0; 
+    }
+
+    .heading h1 {
+        font-size: 25px; 
+    }
+
+    .heading p {
+        font-size: 12px; 
+    }
+}
+
+    @media (max-width: 280px) {
+    .heading h1 {
+        font-size: 20px; 
+    }
+
+    .heading p {
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 272px){
+    .wrapper .card {
+        width: 60%;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 272px){
+    .wrapper .card {
+        width: 45%;
+        margin-left: 7%;
+    }
+
+    .wrapper .card .info h2 {
+        font-size: 13px;
+    }
+
+    .wrapper .card .info p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 192px){
+    .wrapper .card {
+        width: 35%;
+        margin-left: 7%;
+    }
+
+    .wrapper .card .info p {
+        font-size: 8px;
+    }
+
+    .card .info .btn {
+        margin: 0 10%;
+    }
 }
