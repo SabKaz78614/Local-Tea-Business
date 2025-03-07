@@ -118,10 +118,17 @@ function removeFromCart(name) {
 // Function to update the cart icon count
 function updateCartIconCount() {
     let cart = JSON.parse(localStorage.getItem("cart")) || []; // Get cart from localStorage
-    const cartItemCount = document.getElementById("cart-item-count"); // Make sure this matches the ID in HTML
+    const cartItemCountMain = document.getElementById("cart-item-count-main"); // Main navbar cart icon
+    const cartItemCountSidebar = document.getElementById("cart-item-count-sidebar"); // Sidebar cart icon
 
-    if (cartItemCount) {
-        cartItemCount.innerText = cart.reduce((total, item) => total + item.quantity, 0); // Add the quantity of all items
+    const totalItems = cart.reduce((total, item) => total + item.quantity, 0); // Calculate total quantity of items
+
+    if (cartItemCountMain) {
+        cartItemCountMain.innerText = totalItems; // Update cart count in main navbar
+    }
+    
+    if (cartItemCountSidebar) {
+        cartItemCountSidebar.innerText = totalItems; // Update cart count in sidebar
     }
 }
 
