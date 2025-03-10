@@ -59,6 +59,7 @@ Alternatively:
 
 1. open up VS code and open Local-Tea-Business folder to view code.
 2. download the live site extention.
+
 ![Responsice Mockup](./assets/Readme/Livesite.png)
 
 3. click go live at bottom left of VS code.
