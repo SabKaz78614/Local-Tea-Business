@@ -65,6 +65,6 @@ Alternatively:
 3. click go live at bottom left of VS code.
 
 ## Live Site
-Visit the live demo: https://github.com/SabKaz78614/Local-Tea-Business.git
+Visit the live demo:  https://sabkaz78614.github.io/Local-Tea-Business/
 
 If there are any issues visit the site at [Tealite](https://tealite.netlify.app)
