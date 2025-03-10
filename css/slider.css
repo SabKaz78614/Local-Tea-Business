@@ -5,20 +5,19 @@
     box-sizing: border-box;
 }
 
-/* ========== BODY FIX ========== */
 body {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 /* ========== FIX SLIDER POSITION ========== */
 .carousel {
     width: 100%;
-    height: calc(100vh - 77px); /* Adjusted height to fit screen */
+    height: calc(100vh - 77px); 
     position: relative;
-    top: 77px; /* Pushes it below the fixed navbar */
+    top: 77px; 
     overflow: hidden;
 }
 
@@ -57,7 +56,7 @@ body {
 /* ========== TEXT & BUTTON STYLES ========== */
 .slide h1 {
     font-size: 64px;
-    color: hsl(241, 41%, 54%); /* Purple matching navbar */
+    color: hsl(241, 41%, 54%); 
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 30%;
@@ -70,9 +69,9 @@ body {
 .slide a.btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: rgba(241, 41%, 54%, 0.3); /* Light purple background */
-    border: 2px solid hsl(241, 41%, 54%); /* Purple border */
-    color: hsl(241, 41%, 54%); /* Purple text */
+    background-color: rgba(241, 41%, 54%, 0.3); 
+    border: 2px solid hsl(241, 41%, 54%); 
+    color: hsl(241, 41%, 54%); 
     font-size: 16px;
     text-decoration: none;
     border-radius: 30px;
@@ -84,8 +83,8 @@ body {
 }
 
 .slide a.btn:hover {
-    background-color: hsl(241, 41%, 54%); /* Purple background on hover */
-    color: white; /* White text on hover */
+    background-color: hsl(241, 41%, 54%); 
+    color: white;
 }
 
 /* ========== BUTTON STYLES ========== */
@@ -97,18 +96,18 @@ body {
     font-size: 48px;
     top: 50%;
     transform: translateY(-50%);
-    color: hsl(241, 41%, 54%); /* Purple color for button */
+    color: hsl(241, 41%, 54%); 
     cursor: pointer;
     border-radius: 4px;
     padding: 10px;
-    background-color: rgba(241, 41%, 54%, 0.1); /* Light purple background */
+    background-color: rgba(241, 41%, 54%, 0.1); 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .carousel-button:hover,
 .carousel-button:focus {
-    color: white; /* White color on hover */
-    background-color: hsl(241, 41%, 54%); /* Darker purple on hover */
+    color: white; 
+    background-color: hsl(241, 41%, 54%); 
 }
 
 .carousel-button.prev {
@@ -118,6 +117,8 @@ body {
 .carousel-button.next {
     right: 16px;
 }
+
+/* ================= RESPONSIVENESS ================= */
 
 @media (max-width: 768px){
     .slide h1{

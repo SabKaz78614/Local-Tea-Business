@@ -73,8 +73,8 @@ ul.sidebar {
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none; /* Initially hidden */
     flex-direction: column;
-    align-items: flex-start; /* Align items to start by default */
-    justify-content: flex-start; /* Align items to the top by default */
+    align-items: flex-start;
+    justify-content: flex-start; 
     padding-top: 20px;
     overflow-y: scroll;
 }
@@ -143,9 +143,8 @@ label.hamburger {
     border-radius: 25px;
 }
 
-/* ========== RESPONSIVE STYLES ========== */
+/* ================= RESPONSIVENESS ================= */
 
-/* Tablet and smaller screen sizes */
 @media (max-width: 1024px) {
     .navbar a {
         padding: 10px;
@@ -165,16 +164,14 @@ label.hamburger {
     }
 }
 
-/* Smaller screens (Max-width 768px) */
+
 @media (max-width: 768px) {
     .navbar a {
         padding: 0px;
     }
 }
 
-/* Mobile screens (Max-width 660px) */
 @media (max-width: 660px) {
-    /* Make hamburger icon visible */
     label.hamburger {
         display: flex;
     }
@@ -183,17 +180,14 @@ label.hamburger {
         font-size: 20px;
     }
 
-    /* Hide the default navbar items */
     .navbar ul {
         display: none;
     }
 
-    /* Show sidebar when the menu toggle is checked */
     #menu-toggle:checked ~ .sidebar {
         display: flex;
     }
 
-    /* Change styles for navbar items */
     .navbar a {
         padding: 10px 15px;
         font-size: 14px;

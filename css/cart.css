@@ -1,4 +1,4 @@
-/* General Styles */
+/* ========== GLOBAL STYLES ========== */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f7f7f7;
 }
 
-/* Cart Section */
+/* ========== CART SECTION ========== */
 .cart-section {
     max-width: 800px;
     margin: 120px auto 50px auto;

@@ -7,12 +7,11 @@
     
 }
 
-/* ================= REMOVE MARGINS FROM HTML AND BODY ================= */
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%; /* Ensure body and html take full width */
-    height: 100%; /* Ensure body and html take full height */
+    width: 100%; 
+    height: 100%; 
     overflow-x: hidden;
 }
 
@@ -21,8 +20,8 @@ html, body {
     text-align: center;
     padding: 60px 5%;
     background: #f9f7fc;
-    width: 100%; /* Ensure it spans full width */
-    max-width: 100vw; /* Prevents overflow */
+    width: 100%; 
+    max-width: 100vw; 
     margin: 0 auto;
 }
 
@@ -32,7 +31,7 @@ html, body {
     gap: 30px;
     padding: 40px 5%;
     width: 100%;
-    max-width: 100vw; /* Ensure no extra space */
+    max-width: 100vw; 
     margin: 0 auto;
 }
 
@@ -281,28 +280,28 @@ html, body {
 
 @media (max-width: 276px) {
     .products-container {
-        grid-template-columns: 1fr; /* Ensure a single column layout */
-        gap: 15px; /* Reduce the gap between boxes */
+        grid-template-columns: 1fr; 
+        gap: 15px; 
         padding: 20px 3%;
     }
 
     .products-container .box {
-        padding: 15px; /* Reduce padding */
-        border-radius: 8px; /* Slightly smaller border radius */
+        padding: 15px; 
+        border-radius: 8px; 
     }
 
     .products-container img {
-        height: 150px; /* Reduce image height */
+        height: 150px; 
     }
 
     .products-container h3 {
-        font-size: 14px; /* Decrease title size */
+        font-size: 14px;
     }
 
     .products-container .content span,
     .products-container .content a {
-        font-size: 12px; /* Reduce button text size */
-        padding: 4px 10px; /* Adjust button padding */
+        font-size: 12px; 
+        padding: 4px 10px; 
     }
 }
 
@@ -321,13 +320,13 @@ html, body {
     }
 
     .products-container .box {
-        width: 90%; /* Ensure it doesn't overflow */
-        max-width: 230px; /* Prevents stretching */
+        width: 90%; 
+        max-width: 230px; 
         padding: 10px;
     }
 
     .products-container img {
-        height: 140px; /* Reduce image height */
+        height: 140px; 
     }
 
     .products-container h3 {

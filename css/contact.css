@@ -1,8 +1,19 @@
+/* ================= GENERAL STYLES ================= */
+* {
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* ================= FORM STYLES ================= */
+
+/* Form styling */
 form {
     text-align: center; 
 }
 
+/* Container styling */
 .contact-container {
     width: 100%;
     max-width: 800px;
@@ -20,6 +31,7 @@ form {
     color: hsl(241, 41%, 54%);
 }
 
+/* Form input styling */
 form input, form textarea {
     display: block;
     width: 100%;
@@ -41,6 +53,7 @@ form input:focus, form textarea:focus {
     box-shadow: 0 0 5px hsl(241, 41%, 54%); 
 }
 
+/* Form button styling */
 form button {
     display: inline-block; 
     width: auto; 
@@ -58,22 +71,23 @@ form button:hover {
     background-color: hsl(240, 100%, 90%);
 }
 
+/* ================= RESPONSIVENESS ================= */
 @media (max-width: 1024px) {
     .contact-container {
-        max-width: 90%; /* Increase container width */
-        padding: 15px; /* Reduce padding */
+        max-width: 90%; 
+        padding: 15px; 
     }
 
     form input, form textarea {
-        padding: 8px; /* Reduce padding */
+        padding: 8px; 
     }
 
     form textarea {
-        height: 120px; /* Reduce height of textarea */
+        height: 120px;
     }
 
     form button {
-        width: 100%; /* Make button span full width */
-        padding: 12px 0; /* Adjust padding for button */
+        width: 100%; 
+        padding: 12px 0; 
     }
 }
