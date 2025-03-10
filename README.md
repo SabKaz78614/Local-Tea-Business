@@ -5,21 +5,20 @@
 1. [Overview](#overview)
 2. [Features](#features)
 3. [Demo](#demo)
-3. [Languages](#Technologies Used)
-3. [Installation](#installation)
-4. [Live Site](#liveSite)
-
+4. [Technologies Used](#technologies-used)
+5. [Installation](#installation)
+6. [Live Site](#live-site)
 
 This project simulates a local tea business website where customers can view the menu, explore different tea varieties, and learn about the business.
 
-This project is a visually appealing web layout using HTML CSS and JS. It features responsive design, interactive card elements with hover effects, and a modern button, the ability to add items in cart which shows the number of items on icon and a hamburger menu. The layout is designed to adapt to various screen sizes, making it mobile-friendly.
+This project is a visually appealing web layout using HTML, CSS, and JS. It features responsive design, interactive card elements with hover effects, and a modern button, the ability to add items to the cart, which shows the number of items on the icon, and a hamburger menu. The layout is designed to adapt to various screen sizes, making it mobile-friendly.
 
 ## Features
 
 - **Tea Menu**: A section to display a variety of teas and beverages.
 - **Contact Form**: Allows customers to easily get in touch.
 - **Responsive Design**: Fully responsive layout that works on desktop and mobile devices.
-- **Javascript**: Allows for further interactivity such as pop up messages and number count in cart icon.
+- **JavaScript**: Allows for further interactivity such as pop-up messages and number count in the cart icon.
 
 ## Demo
 ![Responsice Mockup](./assets/Readme/main_page.png)
@@ -43,6 +42,7 @@ This project is a visually appealing web layout using HTML CSS and JS. It featur
 ![Responsice Mockup](./assets/Readme/cart.png)
 
 ## Technologies Used
+
 - **HTML**: Basic structure for the page.
 - **CSS**: Styling for the page, including layout, typography, and interactive effects.
 - **JavaScript**: Adds interactivity to the page, such as form validation, dynamic content updates, and other interactive features.
