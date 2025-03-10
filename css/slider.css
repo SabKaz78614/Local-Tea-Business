@@ -73,7 +73,7 @@ body {
     background-color: rgba(241, 41%, 54%, 0.3); /* Light purple background */
     border: 2px solid hsl(241, 41%, 54%); /* Purple border */
     color: hsl(241, 41%, 54%); /* Purple text */
-    font-size: 1rem;
+    font-size: 16px;
     text-decoration: none;
     border-radius: 30px;
     position: absolute;
@@ -117,4 +117,42 @@ body {
 
 .carousel-button.next {
     right: 16px;
+}
+
+@media (max-width: 768px){
+    .slide h1{
+        font-size: 45px;
+    }
+
+    .slide a.btn {
+        font-size: 12px;
+    }
+
+    .slide img {
+        object-fit: fill;
+    }
+}
+
+@media (max-width: 320px){
+    .slide h1{
+        font-size: 35px;
+    }
+
+    .slide a.btn {
+        padding: 4px 12px;
+        font-size: 11px; 
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+    .carousel-button {
+        font-size: 30px;
+        padding: 0px;
+        
+    }
+}
+
+@media (max-width: 200px){
+    .slide h1{
+        font-size: 25px;
+    }
 }
